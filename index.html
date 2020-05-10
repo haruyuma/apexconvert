@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>coloradjust</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="js/main.js"></script>
+
+    </head>
+    
+    <body>
+        <div id="app">
+            <p class="ev-value">EV:{{ evValue }}</p>
+
+            <div class="select-value">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+
+                            <select class="av-select" v-model="avSelected">
+                                <option disabled value="">絞り値</option>
+                                <option class="aaa" v-for="avoption in AV" v-bind:value="avoption.value">
+                                    {{ avoption.name }}
+                                </option>
+                            </select>
+                            {{ getAvValue(avSelected) }}
+                        </div>
+    
+                        <div class="col-md-4 col-xs-12">
+                            <select class="tv-select" v-model="tvSelected">
+                                <option disabled value="">シャッタースピード</option>
+                                <option v-for="tvoption in TV" v-bind:value="tvoption.value">
+                                    {{ tvoption.name }}
+                                </option>
+                            </select>
+                            {{ getTvValue(tvSelected) }}
+                        </div>
+
+                        <div class="col-md-4 col-xs-12">
+                            <select class="iso-select" v-model="isoSelected">
+                                <option disabled value="">ISO感度</option>
+                                <option v-for="isooption in ISO" v-bind:value="isooption.value">
+                                    {{ isooption.name }}
+                                </option>
+                            </select>
+                            {{ getIsoValue(isoSelected) }}
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <h2>EV値の参考</h2>
+        <div class="ev-ezample">
+            <p>EV16&nbsp &nbsp 晴天のビーチ</p>
+            <p>EV10&nbsp &nbsp 雨天</p>
+            <p>EV8 &nbsp&nbsp&nbsp&nbsp 照明のついた室内</p>
+            <p>EV4 &nbsp&nbsp&nbsp&nbsp 暗い室内</p>
+            <p>EX0 &nbsp&nbsp&nbsp&nbsp 薄明かり</p>
+            <p>EV-2&nbsp&nbsp&nbsp 月夜</p>
+            <p>EV-4&nbsp&nbsp&nbsp 星空</p>
+        </div>
+        
+        
+    </body>
+
+</html>
+
