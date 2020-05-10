@@ -1,0 +1,56 @@
+.av-select{
+    margin-bottom:30px;
+    width:90%;
+    
+}
+
+.tv-select{
+    margin-bottom:30px;
+    width:90%;
+    
+}
+
+.iso-select{
+    margin-bottom:30px;
+    width:90%;
+}
+
+option{
+    font-size:20px;
+}
+
+.ev-value{
+    text-align:center;
+    font-size:25px;
+    font-weight: 700;
+    border: 1px solid;
+    border-color: blue;
+    width:200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.select-value{
+    height:200px; 
+    text-align:center;
+    margin-top: 40px;
+}
+
+body {
+    background-image: url("../img/background.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h2{
+    margin-left:20%;
+}
+
+.ev-ezample{
+    font-size:18px;   
+    font-weight: bold;
+    margin-left:20%;
+    margin-top: 30px;
+}
