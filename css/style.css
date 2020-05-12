@@ -1,21 +1,21 @@
 .av-select{
     margin-bottom:30px;
-    width:90%;
-    font-size:25px;
+    width:100%;
+    font-size:20px;
     
 }
 
 .tv-select{
     margin-bottom:30px;
-    width:90%;
-    font-size:25px;
+    width:100%;
+    font-size:20px;
     
 }
 
 .iso-select{
     margin-bottom:30px;
-    width:90%;
-    font-size:25px;
+    width:100%;
+    font-size:20px;
 }
 
 option{
@@ -30,7 +30,7 @@ option{
     border-color: blue;
     width:200px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 8%;
     background-color: white;
 }
 
