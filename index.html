@@ -18,7 +18,7 @@
             <div class="select-value">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-4 col-xs-12">
+                        <div class="col-lg-4 col-xs-12">
 
                             <select class="av-select" v-model="avSelected">
                                 <option disabled value="">絞り値</option>
@@ -29,7 +29,7 @@
                             {{ getAvValue(avSelected) }}
                         </div>
     
-                        <div class="col-sm-4 col-xs-12">
+                        <div class="col-lg-4 col-xs-12">
                             <select class="tv-select" v-model="tvSelected">
                                 <option disabled value="">シャッタースピード</option>
                                 <option v-for="tvoption in TV" v-bind:value="tvoption.value">
@@ -39,7 +39,7 @@
                             {{ getTvValue(tvSelected) }}
                         </div>
 
-                        <div class="col-sm-4 col-xs-12">
+                        <div class="col-lg-4 col-xs-12">
                             <select class="iso-select" v-model="isoSelected">
                                 <option disabled value="">ISO感度</option>
                                 <option v-for="isooption in ISO" v-bind:value="isooption.value">
