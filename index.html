@@ -16,40 +16,32 @@
             <p class="ev-value">EV:{{ evValue }}</p>
 
             <div class="select-value">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-xs-12">
+                <select class="av-select" v-model="avSelected">
+                    <option disabled value="">絞り値</option>
+                    <option class="aaa" v-for="avoption in AV" v-bind:value="avoption.value">
+                        {{ avoption.name }}
+                    </option>
+                </select>
+                {{ getAvValue(avSelected) }}
+                <br>
 
-                            <select class="av-select" v-model="avSelected">
-                                <option disabled value="">絞り値</option>
-                                <option class="aaa" v-for="avoption in AV" v-bind:value="avoption.value">
-                                    {{ avoption.name }}
-                                </option>
-                            </select>
-                            {{ getAvValue(avSelected) }}
-                        </div>
-    
-                        <div class="col-md-4 col-xs-12">
-                            <select class="tv-select" v-model="tvSelected">
-                                <option disabled value="">シャッタースピード</option>
-                                <option v-for="tvoption in TV" v-bind:value="tvoption.value">
-                                    {{ tvoption.name }}
-                                </option>
-                            </select>
-                            {{ getTvValue(tvSelected) }}
-                        </div>
+                <select class="tv-select" v-model="tvSelected">
+                    <option disabled value="">シャッタースピード</option>
+                    <option v-for="tvoption in TV" v-bind:value="tvoption.value">
+                        {{ tvoption.name }}
+                    </option>
+                </select>
+                {{ getTvValue(tvSelected) }}
+                <br>
 
-                        <div class="col-md-4 col-xs-12">
-                            <select class="iso-select" v-model="isoSelected">
-                                <option disabled value="">ISO感度</option>
-                                <option v-for="isooption in ISO" v-bind:value="isooption.value">
-                                    {{ isooption.name }}
-                                </option>
-                            </select>
-                            {{ getIsoValue(isoSelected) }}
-                        </div>
-                    </div>
-                </div>
+                <select class="iso-select" v-model="isoSelected">
+                    <option disabled value="">ISO感度</option>
+                    <option v-for="isooption in ISO" v-bind:value="isooption.value">
+                        {{ isooption.name }}
+                    </option>
+                </select>
+                {{ getIsoValue(isoSelected) }}
+                <br>                      
             </div>            
         </div>
         
