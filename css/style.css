@@ -41,7 +41,7 @@ option{
 }
 
 body {
-    background-image: url("../img/background.jpg"); 
+    background-image: url("../img/bgimg.jpg"); 
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
