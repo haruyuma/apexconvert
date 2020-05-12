@@ -1,21 +1,20 @@
 .av-select{
-    margin-bottom:30px;
-    width:100%;
-    font-size:20px;
+    margin-bottom:50px;
+    width:30%;
+    font-size:25px;
     
 }
 
 .tv-select{
-    margin-bottom:30px;
-    width:100%;
-    font-size:20px;
+    margin-bottom:50px;
+    width:30%;
+    font-size:25px;
     
 }
 
 .iso-select{
-    margin-bottom:30px;
-    width:100%;
-    font-size:20px;
+    width:30%;
+    font-size:25px;
 }
 
 option{
@@ -30,14 +29,15 @@ option{
     border-color: blue;
     width:200px;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 4%;
     background-color: white;
 }
 
 .select-value{
-    height:200px; 
+    
     text-align:center;
-    margin-top: 40px;
+    margin-top: 4%;
+    margin-bottom: 3%;
 }
 
 body {
@@ -48,12 +48,13 @@ body {
 }
 
 h1{
-    margin-left:20%;
+    margin-left:35%;
+    margin-top:1%;
 }
 
 .ev-ezample{
     font-size:25px;   
     font-weight: bold;
-    margin-left:20%;
-    margin-top: 30px;
+    margin-left:35%;
+    margin-top:1%;
 }
